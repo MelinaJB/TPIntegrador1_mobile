@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin30">30dp</dimen>
+    <dimen name="sizeTitle">27sp</dimen>
+    <dimen name="margin16">16dp</dimen>
+    <dimen name="margin21">21dp</dimen>
+    <dimen name="cero">0dp</dimen>
+    <dimen name="sizeTCardIMC">25sp</dimen>
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="txtcardView">16sp</dimen>
+    <dimen name="txtCalculo">23sp</dimen>
+    <dimen name="etCalculo">150dp</dimen>
+
+</resources>

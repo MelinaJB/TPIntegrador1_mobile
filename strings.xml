@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TPintegrador1_MJoloidovskyB</string>
+    <string name="titulo">Cálculo de IMC</string>
+    <string name="descLogo">Logo</string>
+    <string name="titleCardIMC">¿Qué es el IMC?</string>
+    <string name="textoIMC">El IMC, o Índice de Masa Corporal, es una medida que se utiliza comúnmente para evaluar si una persona tiene un peso saludable en relación con su altura. Es una forma rápida y sencilla de determinar si una persona tiene un peso insuficiente, normal, sobrepeso u obesidad.\nEs importante saber que es una medida general y puede no ser adecuada para todas las personas, especialmente aquellas con una gran masa muscular (como los atletas) o las personas mayores, cuya composición corporal puede variar. Por lo tanto, es recomendable consultar a un médico o un profesional de la salud para obtener una evaluación más precisa de tu estado de salud y composición corporal.</string>
+    <string name="btnCardIMC">No volver a mostrar</string>
+    <string name="titleCalculo">Calculá tu IMC</string>
+    <string name="peso">Peso en kg</string>
+    <string name="altura">Altura en m</string>
+    <string name="resultado">IMC actual es </string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="tvUltimoIMC">Último IMC </string>
+    <string name="bienvenido">¡Bienvenidx! \n ¿Como te llamas?</string>
+
+
+</resources>

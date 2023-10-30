@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/App"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/baseline_diversity"
+        app:logoDescription="@string/descLogo">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin30"
+            android:fontFamily="@font/alegreya_sans_medium"
+            android:text="@string/titulo"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sizeTitle"
+            android:textStyle="bold"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin16"
+        android:backgroundTint="@color/cardIMC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/titleCardIMC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alegreya_sans_medium"
+                android:gravity="center"
+                android:padding="@dimen/padding10"
+                android:text="@string/titleCardIMC"
+                android:textColor="@color/titleCardIMC"
+                android:textSize="@dimen/sizeTCardIMC"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/textViewIMC"
+                />
+
+            <TextView
+                android:id="@+id/textViewIMC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textoIMC"
+                android:textSize="@dimen/txtcardView"
+                android:textColor="@color/titleCardIMC"
+                android:paddingLeft="@dimen/padding10"
+                android:paddingRight="@dimen/padding10"
+                android:paddingBottom="@dimen/padding10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleCardIMC"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCardIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="@string/btnCardIMC"
+        android:onClick="noMostrar"
+        android:backgroundTint="@color/App"
+        android:textSize="@dimen/txtcardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardIMC"
+        app:layout_constraintTop_toBottomOf="@+id/cardIMC" />
+
+    <TextView
+        android:id="@+id/textViewSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/sizeTitle"
+        android:textColor="@color/titleCardIMC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCardIMC"
+        android:layout_marginVertical="@dimen/margin30"
+        />
+
+
+    <TextView
+        android:id="@+id/titleCalculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleCalculo"
+        android:textColor="@color/titleCardIMC"
+        android:textSize="@dimen/sizeTCardIMC"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/txtcardView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSaludo"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/tvCalculo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/peso"
+        android:textSize="@dimen/txtCalculo"
+        android:layout_marginHorizontal="@dimen/margin30"
+        android:layout_marginVertical="@dimen/margin21"
+        app:layout_constraintStart_toStartOf="@+id/titleCalculo"
+        app:layout_constraintTop_toBottomOf="@+id/titleCalculo"
+        />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etCalculo1"
+        android:layout_width="@dimen/etCalculo"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin16"
+        android:textSize="@dimen/txtCalculo"
+        app:layout_constraintStart_toEndOf="@+id/tvCalculo1"
+        app:layout_constraintTop_toBottomOf="@+id/titleCalculo"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/tvCalculo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/altura"
+        android:textSize="@dimen/txtCalculo"
+        android:layout_marginHorizontal="@dimen/margin30"
+        android:layout_marginVertical="@dimen/margin21"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalculo1"
+        app:layout_constraintStart_toStartOf="@+id/titleCalculo"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etCalculo2"
+        android:layout_width="@dimen/etCalculo"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/padding10"
+        android:textSize="@dimen/txtCalculo"
+        app:layout_constraintStart_toEndOf="@+id/tvCalculo2"
+        app:layout_constraintTop_toBottomOf="@id/etCalculo1"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCalcular"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:cornerRadius="@dimen/cero"
+        android:text="@string/btnCalcular"
+        android:textSize="@dimen/txtCalculo"
+        android:backgroundTint="@color/App"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCalculo2"
+        android:layout_marginVertical="@dimen/margin16"
+        />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultado"
+        android:textSize="@dimen/txtCalculo"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
+        android:layout_margin="@dimen/margin21"
+        />
+
+    <TextView
+        android:id="@+id/tvUltimoIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="@dimen/txtCalculo"
+        app:layout_constraintStart_toStartOf="@+id/resultado"
+        app:layout_constraintTop_toBottomOf="@+id/resultado"
+        android:layout_marginVertical="@dimen/margin21"
+        />
+
+    <TextView
+        android:id="@+id/textViewMensajeSalud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/txtCalculo"
+        android:textStyle="bold"
+        android:textColor="@color/App"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUltimoIMC"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="@dimen/margin21"
+        android:paddingBottom="@dimen/margin21"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
